@@ -51,7 +51,7 @@ describe 'Mars_Rover' do
   it 'should move one step fordward' do
     mars_rover = Mars_Rover.new
     mars_rover.commands(:f)
-    expect(mars_rover.pass_the_position([0,1])).to eq([0,1])
+    expect(mars_rover.pass_the_position(:f)).to eq([0,1])
   end
   
 end

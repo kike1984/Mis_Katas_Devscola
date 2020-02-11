@@ -1,49 +1,38 @@
-#class FizzBuzz
-  DIVISORS = 3, 5, 15
-  ZERO = 0
+class FizzBuzz
 
   def fizz_buzz_game(number)
-    number_range_one_to_one_hundred.each do |num|
-      if is_divisible_by_fifteen?(num) && if_the_number_ends_in_five(num) == false
-        return "FizzBuzz" 
-      elsif is_divisible_by_five?(num)
-        return "Buzz" 
-      elsif is_divisible_by_three?(num) || if_the_number_ends_in_three(num)
-        return "Fizz" 
-      else
-        return num
-      end
-    end
+    @number = number
+    return "FizzBuzz" if is_divisible_by_fifteen? && if_the_number_ends_in_five == false 
+    return "Buzz"     if is_divisible_by_five? 
+    return "Fizz"     if is_divisible_by_three? || if_the_number_ends_in_three
+    number
   end
 
-  def number_range_one_to_one_hundred
-    (1..100).to_a
+private
+
+  def is_divisible_by_three?
+    is_divisible_by(@number, 3)
   end
 
-#private
-
-  def is_divisible_by_three?(number)
-    is_divisible_by(number, DIVISORS[0])
+  def is_divisible_by_five?
+    is_divisible_by(@number, 5)
   end
 
-  def is_divisible_by_five?(number)
-    is_divisible_by(number, DIVISORS[1])
+  def is_divisible_by_fifteen?
+    is_divisible_by(@number, 15)
   end
 
-  def is_divisible_by_fifteen?(number)
-    is_divisible_by(number, DIVISORS[2])
+  def is_divisible_by(numbers, divisors)
+    @divisors = divisors
+    @number % @divisors == 0
   end
 
-  def is_divisible_by(number, divisors)
-    number % divisors == ZERO
+  def if_the_number_ends_in_three
+    @number.digits[0] == 3
   end
 
-  def if_the_number_ends_in_three(number)
-    number.digits[0] == DIVISORS[0]
+  def if_the_number_ends_in_five
+    @number.digits[0] == 5
   end
 
-  def if_the_number_ends_in_five(number)
-    number.digits[0] == DIVISORS[1]
-  end
-
-#end
+end

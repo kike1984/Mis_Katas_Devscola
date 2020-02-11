@@ -1,4 +1,4 @@
-#require_relative "../src/fizzbuzz"
+require_relative "../src/fizzbuzz"
 
 =begin
 
@@ -31,14 +31,6 @@
 
 describe "FizzBuzz" do
   let(:fizzbuzz) {FizzBuzz.new}
-  
-  it 'List the numbers from 1 to 100' do
-    number = (1..100).to_a
-
-    number_range = fizzbuzz.number_range_one_to_one_hundred
-
-    expect(number_range).to eq(number)
-  end
   
   it 'return Fizz is number is divisible by three' do
     number = 3
@@ -88,50 +80,6 @@ describe "FizzBuzz" do
     result = fizzbuzz.fizz_buzz_game(number)
 
     expect(result).to eq("Buzz")
-  end
-
-end
-
-class FizzBuzz
-
-  def fizz_buzz_game(number)
-    return "FizzBuzz" if is_divisible_by_fifteen?(number) && if_the_number_ends_in_five(number) == false 
-    return "Buzz"     if is_divisible_by_five?(number) 
-    return "Fizz"     if is_divisible_by_three?(number) || if_the_number_ends_in_three(number) 
-    number
-  end
-
-  def number_range_one_to_one_hundred
-    (1..100).to_a
-  end
-
-private
-
-  DIVISORS = 3, 5, 15
-  ZERO = 0
-
-  def is_divisible_by_three?(number)
-    is_divisible_by(number, DIVISORS[0])
-  end
-
-  def is_divisible_by_five?(number)
-    is_divisible_by(number, DIVISORS[1])
-  end
-
-  def is_divisible_by_fifteen?(number)
-    is_divisible_by(number, DIVISORS[2])
-  end
-
-  def is_divisible_by(number, divisors)
-    number % divisors == ZERO
-  end
-
-  def if_the_number_ends_in_three(number)
-    number.digits[0] == DIVISORS[0]
-  end
-
-  def if_the_number_ends_in_five(number)
-    number.digits[0] == DIVISORS[1]
   end
 
 end
