@@ -24,106 +24,119 @@ describe 'LCD Digits' do
 
   it 'should convert number zero to LCD Digits' do
     number = 0
+    digital_number_cero = " _ \n| |\n|_|"
 
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n| |\n|_|")
+    expect(result).to eq(digital_number_cero)
   end
 
-  xit 'should convert number one to LCD Digits' do
+  it 'should convert number one to LCD Digits' do
     number = 1
+    digital_number_one = "   \n  |\n  |"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq("   \n  |\n  |")
+    expect(result).to eq(digital_number_one)
   end
 
-  xit 'should convert number ten to LCD Digits' do
+  it 'should convert number ten to LCD Digits' do
     number = 10
+    digital_number_ten = "    _ \n  || |\n  ||_|"
     
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq("    _ \n  || |\n  ||_|")
+    expect(result).to eq(digital_number_ten)
   end
 
-  xit 'should convert number one hunderd to LCD Digits' do
+  it 'should convert number one hundred to LCD Digits' do
     number = 100
+    digital_number_one_hundred = "    _  _ \n  || || |\n  ||_||_|"
 
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq("    _  _ \n  || || |\n  ||_||_|")
+    expect(result).to eq(digital_number_one_hundred)
   end
 
-  xit 'should convert number two to LCD Digits' do
+  it 'should convert number two to LCD Digits' do
     number = 2
+    digital_number_two = " _ \n _|\n|_ "
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n _|\n|_ ")
+    expect(result).to eq(digital_number_two)
   end
 
-  xit 'should convert number three to LCD Digits' do
+  it 'should convert number three to LCD Digits' do
     number = 3
+    digital_number_three = " _ \n _|\n _|"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n _|\n _|")
+    expect(result).to eq(digital_number_three)
   end
 
-  xit 'should convert number four to LCD Digits' do
+  it 'should convert number four to LCD Digits' do
     number = 4
+    digital_number_four = "   \n|_|\n  |" 
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq("   \n|_|\n  |")
+    expect(result).to eq(digital_number_four)
   end
 
-  xit 'should convert number five to LCD Digits' do
+  it 'should convert number five to LCD Digits' do
     number = 5
+    digital_number_five = " _ \n|_ \n _|"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n|_ \n _|")
+    expect(result).to eq(digital_number_five)
   end
 
-  xit 'should convert number six to LCD Digits' do
+  it 'should convert number six to LCD Digits' do
     number = 6
+    digital_number_six = " _ \n|_ \n|_|"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n|_ \n|_|")
+    expect(result).to eq(digital_number_six)
   end
 
-  xit 'should convert number seven to LCD Digits' do
+  it 'should convert number seven to LCD Digits' do
     number = 7
+    digital_number_seven = " _ \n  |\n  |"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n  |\n  |")
+    expect(result).to eq(digital_number_seven)
   end
 
-  xit 'should convert number eigth to LCD Digits' do
+  it 'should convert number eigth to LCD Digits' do
     number = 8
+    digital_number_eight = " _ \n|_|\n|_|"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n|_|\n|_|")
+    expect(result).to eq(digital_number_eight)
   end
 
-  xit 'should convert number nine to LCD Digits' do
+  it 'should convert number nine to LCD Digits' do
     number = 9
+    digital_number_nine = " _ \n|_|\n  |"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq(" _ \n|_|\n  |")
+    expect(result).to eq(digital_number_nine)
   end
 
-  xit 'should return error if number is negative' do
+  it 'should convert number if number is negative' do
     number = -9
+    digital_negative_number_nine = "    _ \n__ |_|\n     |"
   
     result = digits.convert_number_to_lcd_digits(number)
 
-    expect(result).to eq("    _ \n__ |_|\n     |")
+    expect(result).to eq(digital_negative_number_nine)
   end
 
 end
