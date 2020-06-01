@@ -27,7 +27,7 @@ convert_to_arabic	src/roman_numerals.rb	/^  def convert_to_arabic(number)$/;"	f	
 convert_to_roman	src/roman_numerals.rb	/^  def convert_to_roman(number)$/;"	f	class:Converter_Roman_Numbers
 count_deaf_rats	spec/codewars_kata/hamelin_spec.rb	/^def count_deaf_rats(town)$/;"	f
 count_negative	src/string_calculator.rb	/^  def count_negative$/;"	f	class:StringCalculator
-create	Lcd_Digit/src/create_digital_numbers.rb	/^  def create(line_one, line_two, line_three)$/;"	f	class:CreateDigitalNumbers
+create	Lcd_Digit/src/create_digital_numbers.rb	/^  def create(first_line, second_line, third_line)$/;"	f	class:CreateDigitalNumbers
 cuatro_euros	src/Monedas.rb	/^  def cuatro_euros$/;"	f	class:Monedas
 devolver_cantidad_minima_de_monedas	src/Monedas.rb	/^  def devolver_cantidad_minima_de_monedas$/;"	f	class:Monedas
 digital_eigth	src/lcd_digits.rb	/^  def digital_eigth$/;"	f	class:LCD_Digits
@@ -66,7 +66,8 @@ print_numbers_in_digital_form	src/lcd_digits.rb	/^  def print_numbers_in_digital
 queued_numbers	src/string_calculator.rb	/^  def queued_numbers$/;"	f	class:StringCalculator
 roman_values	src/roman_numerals.rb	/^  def roman_values(ch)$/;"	f	class:Converter_Roman_Numbers
 run_the_calculation	src/basic_math.rb	/^  def run_the_calculation(string_numbers)$/;"	f	class:CalculateString
-search_the_digit_in_the_library	Lcd_Digit/src/print_digital_numbers.rb	/^  def search_the_digit_in_the_library$/;"	f	class:ConvertToDigitalForm
+search_for_digital_representation	Lcd_Digit/src/print_digital_numbers.rb	/^  def search_for_digital_representation$/;"	f	class:ConvertToDigitalForm
+search_in_the_library	Lcd_Digit/src/print_digital_numbers.rb	/^  def search_in_the_library(character)$/;"	f	class:ConvertToDigitalForm
 ski_jump	spec/codewars_kata/Ski_Jump_spec.rb	/^def ski_jump(mountain)$/;"	f
 string_includes_plus_or_minus?	src/basic_math.rb	/^  def string_includes_plus_or_minus?(string_numbers)$/;"	f	class:CalculateString
 sum_triangular_numbers	spec/codewars_kata/sum_triang_num_spec.rb	/^def sum_triangular_numbers(n)$/;"	f

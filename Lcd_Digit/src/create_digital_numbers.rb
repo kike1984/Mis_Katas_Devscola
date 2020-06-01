@@ -2,8 +2,8 @@
 
 # creamos una clase para preparar los numeros digitales
 class CreateDigitalNumbers
-  def create(line_one, line_two, line_three)
-    [line_one, line_two, line_three]
+  def create(first_line, second_line, third_line)
+    [first_line, second_line, third_line]
   end
 end
 
@@ -25,10 +25,5 @@ class DigitalNumberLibrary < CreateDigitalNumbers
                                                 '  _|',
                                                 '  _|')
 
-  DIGIT = {
-    digit_zero => '0',
-    digit_one => '1',
-    digit_two => '2',
-    digit_three => '3'
-  }.freeze
+  DIGIT = { digit_zero => '0', digit_one => '1', digit_two => '2', digit_three => '3' }.freeze
 end
