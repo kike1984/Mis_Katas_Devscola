@@ -5,10 +5,10 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 CalculateString	src/basic_math.rb	/^class CalculateString$/;"	c
-Convert_Integers_in_Digital_Form	Lcd_Digit/src/Print_digital_numbers.rb	/^class Convert_Integers_in_Digital_Form < Digital_Number_Library$/;"	c
+ConvertToDigitalForm	Lcd_Digit/src/print_digital_numbers.rb	/^class ConvertToDigitalForm < DigitalNumberLibrary$/;"	c
 Converter_Roman_Numbers	src/roman_numerals.rb	/^class Converter_Roman_Numbers$/;"	c
-Create_Digital_Numbers	Lcd_Digit/src/Create_Digital_Numbers.rb	/^class Create_Digital_Numbers$/;"	c
-Digital_Number_Library	Lcd_Digit/src/Create_Digital_Numbers.rb	/^class Digital_Number_Library < Create_Digital_Numbers$/;"	c
+CreateDigitalNumbers	Lcd_Digit/src/create_digital_numbers.rb	/^class CreateDigitalNumbers$/;"	c
+DigitalNumberLibrary	Lcd_Digit/src/create_digital_numbers.rb	/^class DigitalNumberLibrary < CreateDigitalNumbers$/;"	c
 FizzBuzz	src/fizzbuzz.rb	/^class FizzBuzz$/;"	c
 LCD_Digits	src/lcd_digits.rb	/^class LCD_Digits$/;"	c
 Mars_Rover	spec/mars_rover_spec.rb	/^class Mars_Rover$/;"	c
@@ -20,14 +20,14 @@ cantidad_de_euros	src/Monedas.rb	/^  def cantidad_de_euros(dinero)$/;"	f	class:M
 cantidad_de_monedas	src/Monedas.rb	/^  def cantidad_de_monedas$/;"	f	class:Monedas
 change_words_for_signs	src/basic_math.rb	/^  def change_words_for_signs(string_numbers)$/;"	f	class:CalculateString
 commands	spec/mars_rover_spec.rb	/^  def commands command$/;"	f	class:Mars_Rover
-convert	Lcd_Digit/src/Print_digital_numbers.rb	/^  def convert(number)$/;"	f	class:Convert_Integers_in_Digital_Form
+convert	Lcd_Digit/src/print_digital_numbers.rb	/^  def convert(number)$/;"	f	class:ConvertToDigitalForm
 convert_number_to_lcd_digits	src/lcd_digits.rb	/^  def convert_number_to_lcd_digits(number)$/;"	f	class:LCD_Digits
 convert_numbers	src/roman_numerals.rb	/^  def convert_numbers(number)$/;"	f	class:Converter_Roman_Numbers
 convert_to_arabic	src/roman_numerals.rb	/^  def convert_to_arabic(number)$/;"	f	class:Converter_Roman_Numbers
 convert_to_roman	src/roman_numerals.rb	/^  def convert_to_roman(number)$/;"	f	class:Converter_Roman_Numbers
 count_deaf_rats	spec/codewars_kata/hamelin_spec.rb	/^def count_deaf_rats(town)$/;"	f
 count_negative	src/string_calculator.rb	/^  def count_negative$/;"	f	class:StringCalculator
-create	Lcd_Digit/src/Create_Digital_Numbers.rb	/^  def create(line_one, line_two, line_three)$/;"	f	class:Create_Digital_Numbers
+create	Lcd_Digit/src/create_digital_numbers.rb	/^  def create(line_one, line_two, line_three)$/;"	f	class:CreateDigitalNumbers
 cuatro_euros	src/Monedas.rb	/^  def cuatro_euros$/;"	f	class:Monedas
 devolver_cantidad_minima_de_monedas	src/Monedas.rb	/^  def devolver_cantidad_minima_de_monedas$/;"	f	class:Monedas
 digital_eigth	src/lcd_digits.rb	/^  def digital_eigth$/;"	f	class:LCD_Digits
@@ -61,10 +61,12 @@ oddeven	src/oddeven.rb	/^def oddeven(number)$/;"	f
 pasar_todo_el_dinero_a_centimos	src/Monedas.rb	/^  def pasar_todo_el_dinero_a_centimos$/;"	f	class:Monedas
 pass_the_position	spec/mars_rover_spec.rb	/^  def pass_the_position position$/;"	f	class:Mars_Rover
 preparing_the_string	src/basic_math.rb	/^  def preparing_the_string(string_numbers)$/;"	f	class:CalculateString
+print_digital_numbers	Lcd_Digit/src/print_digital_numbers.rb	/^  def print_digital_numbers$/;"	f	class:ConvertToDigitalForm
 print_numbers_in_digital_form	src/lcd_digits.rb	/^  def print_numbers_in_digital_form  $/;"	f	class:LCD_Digits
 queued_numbers	src/string_calculator.rb	/^  def queued_numbers$/;"	f	class:StringCalculator
 roman_values	src/roman_numerals.rb	/^  def roman_values(ch)$/;"	f	class:Converter_Roman_Numbers
 run_the_calculation	src/basic_math.rb	/^  def run_the_calculation(string_numbers)$/;"	f	class:CalculateString
+search_the_digit_in_the_library	Lcd_Digit/src/print_digital_numbers.rb	/^  def search_the_digit_in_the_library$/;"	f	class:ConvertToDigitalForm
 ski_jump	spec/codewars_kata/Ski_Jump_spec.rb	/^def ski_jump(mountain)$/;"	f
 string_includes_plus_or_minus?	src/basic_math.rb	/^  def string_includes_plus_or_minus?(string_numbers)$/;"	f	class:CalculateString
 sum_triangular_numbers	spec/codewars_kata/sum_triang_num_spec.rb	/^def sum_triangular_numbers(n)$/;"	f
