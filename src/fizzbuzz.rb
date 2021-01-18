@@ -1,42 +1,40 @@
 class FizzBuzz
-
   def fizz_buzz_game(number)
     @number = number
-    return "FizzBuzz" if is_divisible_by_fifteen? && if_the_number_does_not_end_in_five
-    return "Buzz"     if is_divisible_by_five?
-    return "Fizz"     if is_divisible_by_three? || if_the_number_ends_in_three
+    return 'FizzBuzz' if divisible_by_fifteen?
+    return 'Buzz'     if divisible_by_five? || include_the_number_five?
+    return 'Fizz'     if divisible_by_three? || include_the_number_three?
+
     number
   end
 
 private
-  THREE, FIVE, FIFTEEN = 3, 5, 15
 
-  def is_divisible_by_three?
-    is_divisible_by?(THREE)
+  THREE = 3
+  FIVE = 5
+  FIFTEEN = 15
+
+  def divisible_by_three?
+    divisible_by?(THREE)
   end
 
-  def is_divisible_by_five?
-    is_divisible_by?(FIVE)
+  def divisible_by_five?
+    divisible_by?(FIVE)
   end
 
-  def is_divisible_by_fifteen?
-    is_divisible_by?(FIFTEEN)
+  def divisible_by_fifteen?
+    divisible_by?(FIFTEEN)
   end
 
-  def is_divisible_by?(divisor)
-    @number % divisor == 0
+  def divisible_by?(divisor)
+    (@number % divisor).zero?
   end
 
-  def if_the_number_ends_in_three
-    the_last_digit == THREE
+  def include_the_number_three?
+    @number.to_s.include?('3')
   end
 
-  def if_the_number_does_not_end_in_five
-    the_last_digit != FIVE
+  def include_the_number_five?
+    @number.to_s.include?('5')
   end
-
-  def the_last_digit
-    @number.digits[0]
-  end
-
 end
