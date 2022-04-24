@@ -1,25 +1,19 @@
+# frozen_string_literal: true
 
-
+# Dar monedas mínimas
 class Monedas
-
   def cantidad_de_euros(dinero)
     @dinero = dinero.to_f
 
     devolver_cantidad_minima_de_monedas
   end
 
-private
+  private
 
   MONEDAS_EURO = {
-    200 => "2 €",
-    100 => "1 €",
-    50  => "50 centimos",
-    20  => "20 centimos", 
-    10  => "10 centimos",
-    5   => "5 centimos",
-    2   => "2 centimos",
-    1   => "1 centimo"
-  }
+    200 => '2 €', 100 => '1 €', 50 => '50 centimos', 20 => '20 centimos', 10 => '10 centimos',
+    5 => '5 centimos', 2 => '2 centimos', 1 => '1 centimo'
+  }.freeze
 
   def devolver_cantidad_minima_de_monedas
     dinero_en_centimos = pasar_todo_el_dinero_a_centimos
@@ -58,5 +52,4 @@ private
   def pasar_todo_el_dinero_a_centimos
     @dinero * 100
   end
-
 end

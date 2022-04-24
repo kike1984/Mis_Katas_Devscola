@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+#  analice if number is divisible by 3, 5 or 15
 class FizzBuzz
   def fizz_buzz_game(number)
     @number = number
@@ -8,7 +11,7 @@ class FizzBuzz
     number
   end
 
-private
+  private
 
   THREE = 3
   FIVE = 5
